@@ -1,0 +1,460 @@
+/* as a good practice */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  body {
+    background: #100928;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* style nav bar; */
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #172262;
+    position: sticky;
+    top: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 25px;
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    color: rgb(41, 56, 107);
+    font-size: 0.95rem;
+  }
+
+  .left {
+    font-size: 1.5rem;
+  }
+
+  /* style the sections */
+  .first {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    align-items: center;
+  }
+
+  .right-section {
+    /* background: red; */
+  }
+  .left-section {
+    font-size: 2.5rem;
+    font-size: 31px;
+  }
+  .first > div {
+    width: 30%;
+  }
+
+  .img img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 42px 30px;
+    background-size: cover;
+  }
+
+  /* This isutility class */
+  .name-color,
+  #element {
+    color: blueviolet;
+  }
+
+  /* design second section; */
+  .secondsection {
+    /* background-color: white; */
+    max-width: 80vw;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row_style{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 18%;
+    /* background: #1d8dd7; */
+  }
+  .col_style1{
+    color: rgb(220, 220, 220);
+    width: 50%;
+  }
+  .col_style2{
+      width: 50%;
+      color: #555353;
+  }
+
+  
+
+  .first_col {
+    background-color: red;
+    width: 50%;
+  }
+
+  .second_col{
+    background: #000;
+    width: 50%;
+  }
+
+  #line2 {
+    border: 1;
+    background: #989cb7;
+    height: 0.2px;
+    margin: 50px 0px 5px 5px;
+  }
+  #line1 {
+    border: 0;
+    background: #4c5596;
+    height: 0.2px;
+    margin: 30px 48px;
+  }
+
+  #Skills {
+    margin: 0 120px;
+    font-size: 1.55rem;
+  }
+
+  /* //lines to show skilles */
+  .secondsection .verticle {
+    height: 30px;
+    width: 1px;
+    background: #c69d9d;
+  }
+
+  .box {
+    /* background-color: rgb(224, 113, 113); */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* // skilles dives */
+  .actual-skiles {
+    font-size: 1rem;
+    width: 10vw;
+    /* background: #000; */
+    margin-top: 10px;
+  }
+  .actual-skiles ul li {
+    list-style: none;
+    color: aqua;
+  }
+
+  .skiles-title {
+    position: relative;
+    top: -31px;
+    left: -31px;
+  }
+
+  /* Buttons for resume downloads and othor one */
+  .downloads {
+    margin-top: 10px;
+  }
+  .btn {
+    padding: 8px;
+    width: 10vw;
+    background: transparent;
+    color: white;
+    border: 2px solid #47579a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #47579a;
+  }
+
+  /* project section; */
+  .projects {
+    /* background: #bb7e7e; */
+    height: 95vh;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pr-cards {
+    height: 100%;
+    width: 97%;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    overflow-y: scroll;
+  }
+
+  /* design card; */
+  .card {
+    height: 230px;
+    width: 300px;
+    background: #383161;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid slateblue;
+    box-shadow: -5px 15px #1411119c;
+    transition: all 0.5s ease;
+  }
+
+  .card:hover {
+    scale: 1.1;
+  }
+
+  .pr-cards:hover {
+    background-color: #767eb4;
+    border-radius: 1%;
+  }
+  .card img {
+    height: 115px;
+    width: 100%;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .btn-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn-code button {
+    padding: 5px;
+    background: transparent;
+    border: none;
+    background-color: #525291;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 4px;
+    cursor: pointer;
+  }
+  .info p {
+    font-size: 0.8rem;
+  }
+
+  /* make the section of achievements  */
+  .Achivements {
+    height: 70vh;
+    width: 100vw;
+    /* background: #794646; */
+  }
+  .container {
+    height: 70%;
+    width: 85%;
+    background: #000;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* This is starting to create the scrollbar horizontal; */
+  .slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .boxi {
+    height: 90px;
+    width: 200px;
+    background: #881818;
+  }
+
+  .arrow-style {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .galary {
+    width: 900px;
+    height: 50vh;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+
+  .galary div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+  }
+  .galary div img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    transition: all 0.7s ease;
+  }
+  .galary div img:hover {
+    scale: 1.1;
+  }
+  .galary::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* stop the scroll bar; */
+
+  /* create footer; */
+  .footer {
+    height: 350px;
+    width: 100%;
+    background: rgb(35, 37, 67);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #para {
+    display: flex;
+    height: 300px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  #footer-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+
+  #footer-ul li a{
+    color: white;
+    font-size: 20px;
+  }
+
+  .container2{
+    width: 100vw;
+    overflow-x: scroll;
+    background: #b06d6d;
+  }
+
+  #ham{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background-color: rgb(123, 141, 255);
+    display: none;
+  }
+
+  /* To make responsive the website */
+  @media (max-width: 500px) {
+    .box{
+      flex-direction: column;
+    gap: 138px;
+    align-items: center;
+    /* background: black; */
+    overflow-y: scroll;
+    height: 42vh;
+    border: 1px solid rgb(108, 108, 232);
+    }
+
+    .actual-skiles ul li{
+        width: 10rem;
+    }
+  }
+  @media (max-width: 800px){
+    .first{
+      flex-direction: column;
+    }
+
+    .first > div{
+      width: 100vw;
+      text-align: center;
+    }
+
+    .btn{
+      height: 5vh;
+      width: 25vw;
+      font-size: 10px;
+    }
+
+    nav ul li{
+      margin: 0 12px;
+    }
+
+    nav ul{
+      position: relative;
+      right: 20px;
+    }
+
+    .right ul{
+      position: absolute;
+      top: 79px;
+      left: 0;
+      background: rgb(85, 83, 149);
+      flex-direction: column;
+      transition: all 0.1s ease-in;
+      opacity: 0;
+    }
+
+
+    #Skills{
+      width: 100%;
+      /* background-color: red; */
+      margin: 0;
+      text-align: center;
+    }
+
+    #ham{
+      display: inline;
+    }
+
+  }
+
